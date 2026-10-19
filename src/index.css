@@ -1,0 +1,84 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Modern electric-blue theme */
+  --accent: #3B82F6;
+  --accent-hover: #2563EB;
+  --page-bg: #F5F7FB;
+  --surface-bg: #FFFFFF;
+  --text-primary: #111827;
+  --text-secondary: #526174;
+  --border-color: #DCE3ED;
+}
+
+:root[data-theme="dark"] {
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --page-bg: #0D0D14;
+  --surface-bg: #15151F;
+  --text-primary: #F3F4F6;
+  --text-secondary: #A6ADBB;
+  --border-color: #292D3A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  scroll-margin-top: 90px;
+}

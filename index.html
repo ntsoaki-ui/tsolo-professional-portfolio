@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ntsoaki Tsolo | IT Professional</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      (function () {
+        try {
+          const key = "portfolioVisitTracked";
+
+          // Count once per browser tab session
+          if (sessionStorage.getItem(key)) return;
+
+          sessionStorage.setItem(key, "1");
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbx5paJ9E8eHTdPeIyFFEQRiTGv8p7yu-FG5uE8niVvPi2o12gxEy6CMi6JR09-f4ld4Rg/exec?event=page_view&t=" +
+              Date.now(),
+            {
+              method: "GET",
+              mode: "no-cors",
+              cache: "no-store"
+            }
+          ).catch(function (error) {
+            console.error("Visit tracking failed:", error);
+          });
+        } catch (error) {
+          console.error("Visit tracking error:", error);
+        }
+      })();
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
