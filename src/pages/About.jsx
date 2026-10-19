@@ -14,7 +14,7 @@ function About() {
       relative
       min-h-screen
       bg-[var(--page-bg)]
-      text-[var(--text-[var(--accent)])]
+      text-[var(--accent)]
       overflow-hidden
       "
     >
