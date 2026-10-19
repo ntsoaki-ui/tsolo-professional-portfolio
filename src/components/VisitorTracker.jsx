@@ -1,7 +1,7 @@
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { trackEvent } from "../utils/visitorTracker";
+import { trackEvent } from "../utils/VisitorTracker.js";
 
 export default function VisitorTracker() {
   const location = useLocation();
