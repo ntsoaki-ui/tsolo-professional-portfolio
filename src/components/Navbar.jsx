@@ -135,7 +135,7 @@ export default function Navbar({ theme, onToggleTheme }) {
 
           {/* DOWNLOAD CV */}
           <a
-            href="/Ntsoaki_Tsolo_CV.pdf"
+            href="/NTSOAKI%20TSOLO'S%20PROFESSIONAL%20CV.pdf"
             download
             onClick={handleDownloadCV}
             className={cvButton}
@@ -200,7 +200,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               ))}
 
               <a
-                href="/Ntsoaki_Tsolo_CV.pdf"
+                href="/NTSOAKI%20TSOLO'S%20PROFESSIONAL%20CV.pdf"
                 download
                 onClick={() => {
                   handleDownloadCV();
